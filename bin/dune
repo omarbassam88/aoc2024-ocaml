@@ -1,0 +1,3 @@
+(executables 
+ (public_names day)
+ (libraries aoc core fmt str))

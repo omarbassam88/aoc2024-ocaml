@@ -1,0 +1,6 @@
+(library 
+ (name aoc)
+ (public_name aoc)
+ (inline_tests)
+ (preprocess (pps ppx_inline_test))
+ (libraries core fmt str))
