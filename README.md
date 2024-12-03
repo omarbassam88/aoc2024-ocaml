@@ -11,7 +11,7 @@ I always think of [Advent of Code](https://adventofcode.com) as the perfect chan
 
 - [Core](https://opensource.janestreet.com/core/)
 - [fmt](https://github.com/dbuenzli/fmt)
-- [Str](https://ocaml.org/manual/5.2/api/Str.html)
+- [Re](https://ocaml.org/p/re/latest/README.md.html)
 - [ppx_inline_test](https://github.com/janestreet/ppx_inline_test)
 
 ## Usage

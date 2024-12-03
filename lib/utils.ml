@@ -9,4 +9,4 @@ let read_file file_name =
     raise e
 
 (** Get a list of lines of a string *)
-let lines input = String.split_on_char '\n' input
+let lines input = String.split_on_char '\n' (String.trim input)

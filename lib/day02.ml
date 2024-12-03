@@ -1,7 +1,7 @@
-let parse_line line = String.split_on_char ' ' line |> List.map int_of_string
+let parse_line line =
+  Re.(matches (Pcre.regexp {|\d+|})) line |> List.map int_of_string
 
-let parse_input input =
-  Utils.lines input |> List.filter (( <> ) "") |> List.map parse_line
+let parse_input input = Utils.lines input |> List.map parse_line
 
 let rec calculate_distances = function
   | [ _ ] | [] -> []
@@ -27,7 +27,7 @@ let part_two input =
     || List.filteri
          (fun index _ -> is_safe (remove_from_list report index))
          report
-       |> List.length |> ( >= ) 1
+       |> List.length |> ( <= ) 1
   in
   parse_input input |> List.filter is_safe_dampened |> List.length
 
