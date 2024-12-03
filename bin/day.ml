@@ -4,7 +4,12 @@ module type Day = sig
 end
 
 let modules =
-  [ ("01", (module Aoc.Day01 : Day)); ("02", (module Aoc.Day02 : Day)) ]
+  let open Aoc in
+  [
+    ("01", (module Day01 : Day));
+    ("02", (module Day02 : Day));
+    ("03", (module Day03 : Day));
+  ]
 
 let () =
   let d = Array.get Sys.argv 1 in
