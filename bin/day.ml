@@ -9,6 +9,7 @@ let modules =
     ("01", (module Day01 : Day));
     ("02", (module Day02 : Day));
     ("03", (module Day03 : Day));
+    ("04", (module Day04 : Day));
   ]
 
 let () =
