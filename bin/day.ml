@@ -13,6 +13,7 @@ let modules =
     ("05", (module Day05 : Day));
     ("06", (module Day06 : Day));
     ("07", (module Day07 : Day));
+    ("08", (module Day08 : Day));
   ]
 
 let () =
